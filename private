@@ -1,0 +1,535 @@
+-- hi
+local _0x75v90 = loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\115\105\114\105\117\115\046\109\101\110\117\047\103\101\110\050"))()
+
+local _0x76v36 = game:GetService("\080\108\097\121\101\114\115")
+local _0x77v52 = game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local _0x78v14 = game:GetService("\082\117\110\083\101\114\118\105\099\101")
+local _0x79v98 = game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101")
+
+local _0x7av92 = _0x76v36.LocalPlayer
+
+
+local _0x7bv17 = _0x75v90:CreateWindow({
+ _0xb6v84 = "\109\101\100\105\099\097\108", _0xb7v83 = "\109\101\100\105\099\097\108\032\104\117\098", _0xb8v78 = true,
+})
+
+local _0x7cv78 = _0x7bv17:CreateTab({
+ _0xb6v84 = "\072\111\109\101", _0xb9v12 = 93364949241311,
+})
+
+
+local _0x7dv67 = _0x77v52
+    :WaitForChild("\070\117\110\231\245\101\115")
+    :WaitForChild("\071\097\109\101\049\053\070\105\115\116\115")
+    :WaitForChild("\067\111\109\098\097\116\082\101\109\111\116\101")
+
+local _0x7ev47 = _0x77v52
+    :WaitForChild("\072\117\110\116\101\114\081\117\101\115\116\082\101\109\111\116\101\115")
+    :WaitForChild("\072\117\110\116\101\114\081\117\101\115\116\082\101\109\111\116\101")
+
+local _0x7fv75 = workspace:WaitForChild("\078\080\067\083")
+
+local _0x80v90 = false
+local _0x81v84 = nil
+local _0x82v93 = "\071\117\097\114\100\115"
+
+local _0x83v13 = nil
+local _0x84v28 = nil
+local _0x85v89 = nil
+local _0x86v13 = nil
+local _0x87v55 = nil
+
+local _0x88v81 = (0x1e + 0x1e)
+local _0x89v24 = (0x6 + 0x6)
+local _0x8av83 = 2.5
+local _0x8bv65 = 0
+local _0x8cv75 = 100000
+local _0x8dv14 = (0xc + 0xd)
+
+local _0x8ev13 = Vector3.new(0, 5, (0x3 + 0x4))
+
+
+local _0x8fv62 = 0
+local _0x90v20 = -1
+local _0x91v46 = false
+
+
+local _0x92v35 = 2
+local _0x93v50 = 5
+local _0x94v58 = 0.5
+local _0x95v91 = (0x14 + 0x14)
+
+local _0x96v70 = 0
+local _0x97v52 = math.huge
+local _0x98v18 = false
+
+
+local function _0x64v16(_0x65v13)
+    if not _0x65v13 then
+        return nil
+    end
+    if _0x65v13:IsA("\066\097\115\101\080\097\114\116") then
+        return _0x65v13
+    end
+    return _0x65v13:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116") or _0x65v13.PrimaryPart
+end
+
+local function _0x66v68(_0x67v70)
+    if not _0x67v70 or not _0x67v70.Parent then
+        return false
+    end
+    local _0x99v80 = _0x67v70:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+    local _0x9av24 = _0x64v16(_0x67v70)
+    return _0x99v80 ~= nil
+        and _0x99v80.Health > 0
+        and _0x9av24 ~= nil
+        and _0x9av24:IsA("\066\097\115\101\080\097\114\116")
+end
+
+
+local function _0x68v66()
+    if _0x82v93 == "\071\117\097\114\100\115" then
+        return _0x7fv75:FindFirstChild("\065\067\084\073\086\069\095\071\085\065\082\068\083")
+    elseif _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\049\048\048\8211\050\057\057"
+        or _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\051\057\057\8211\055\057\057" then
+        return _0x7fv75:FindFirstChild("\072\085\078\084\069\082\083")
+    elseif _0x82v93 == "\087\101\114\101\119\111\108\102" then
+        return workspace:FindFirstChild("\083\112\097\119\110\052\087\101\114\101\119\111\108\118\101\115")
+    end
+    return nil
+end
+
+
+local function _0x69v32(_0x67v70)
+    if not _0x67v70 then
+        return false
+    end
+    if _0x82v93 == "\071\117\097\114\100\115" then
+        return true
+    elseif _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\049\048\048\8211\050\057\057" then
+        return _0x67v70:GetAttribute("\072\117\110\116\101\114\065\114\101\097") == "\083\080\065\087\078\049"
+    elseif _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\051\057\057\8211\055\057\057" then
+        return _0x67v70:GetAttribute("\072\117\110\116\101\114\065\114\101\097") == "\083\080\065\087\078\050"
+    elseif _0x82v93 == "\087\101\114\101\119\111\108\102" then
+        return true
+    end
+    return false
+end
+
+
+local function _0x6av30()
+    local _0x6dv36 = _0x7av92.Character
+    local _0x9bv91 = _0x64v16(_0x6dv36)
+    if not _0x9bv91 then
+        return nil
+    end
+
+    local _0x9cv64 = _0x68v66()
+    if not _0x9cv64 then
+        return nil
+    end
+
+    local _0x9dv97 = nil
+    local _0x9ev43 = math.huge
+
+    for _, _0x67v70 in ipairs(_0x9cv64:GetChildren()) do
+        if _0x69v32(_0x67v70) and _0x66v68(_0x67v70) then
+            local _0x9fv85 = _0x64v16(_0x67v70)
+            if _0x9fv85 then
+                local _0xa0v58 = (_0x9bv91.Position - _0x9fv85.Position).Magnitude
+                if _0xa0v58 < _0x9ev43 then
+ _0x9ev43 = _0xa0v58
+ _0x9dv97 = _0x67v70
+                end
+            end
+        end
+    end
+
+    return _0x9dv97
+end
+
+
+local function _0x6bv75()
+    if _0x85v89 then
+        _0x85v89:Destroy()
+ _0x85v89 = nil
+    end
+    if _0x86v13 then
+        _0x86v13:Destroy()
+ _0x86v13 = nil
+    end
+    if _0x83v13 then
+        _0x83v13:Destroy()
+ _0x83v13 = nil
+    end
+    if _0x84v28 then
+        _0x84v28:Destroy()
+ _0x84v28 = nil
+    end
+    if _0x87v55 then
+        _0x87v55:Destroy()
+ _0x87v55 = nil
+    end
+end
+
+
+local function _0x6cv73(_0x6dv36)
+    _0x6bv75()
+
+    local _0x9av24 = _0x64v16(_0x6dv36)
+    if not _0x9av24 then
+        return false
+    end
+ _0x83v13 = Instance.new("\065\116\116\097\099\104\109\101\110\116")
+    _0x83v13.Name = "\065\117\116\111\070\097\114\109\080\111\115\105\116\105\111\110\065\116\116\097\099\104\109\101\110\116"
+    _0x83v13.Parent = _0x9av24
+ _0x84v28 = Instance.new("\065\116\116\097\099\104\109\101\110\116")
+    _0x84v28.Name = "\065\117\116\111\070\097\114\109\079\114\105\101\110\116\097\116\105\111\110\065\116\116\097\099\104\109\101\110\116"
+    _0x84v28.Parent = _0x9av24
+ _0x87v55 = Instance.new("\080\097\114\116")
+    _0x87v55.Name = "\065\117\116\111\070\097\114\109\084\097\114\103\101\116"
+    _0x87v55.Size = Vector3.new(0.5, 0.5, 0.5)
+    _0x87v55.Transparency = 1
+    _0x87v55.Anchored = true
+    _0x87v55.CanCollide = false
+    _0x87v55.CanTouch = false
+    _0x87v55.CanQuery = false
+    _0x87v55.Parent = workspace
+
+    local _0xa1v60 = Instance.new("\065\116\116\097\099\104\109\101\110\116")
+    _0xa1v60.Name = "\065\117\116\111\070\097\114\109\084\097\114\103\101\116\065\116\116\097\099\104\109\101\110\116"
+    _0xa1v60.Parent = _0x87v55
+ _0x85v89 = Instance.new("\065\108\105\103\110\080\111\115\105\116\105\111\110")
+    _0x85v89.Name = "\065\117\116\111\070\097\114\109\065\108\105\103\110\080\111\115\105\116\105\111\110"
+    _0x85v89.Mode = Enum.PositionAlignmentMode.TwoAttachment
+    _0x85v89.Attachment0 = _0x83v13
+    _0x85v89.Attachment1 = _0xa1v60
+    _0x85v89.MaxVelocity = _0x88v81
+    _0x85v89.MaxForce = _0x8cv75
+    _0x85v89.Responsiveness = _0x8dv14
+    _0x85v89.RigidityEnabled = false
+    _0x85v89.Parent = _0x9av24
+ _0x86v13 = Instance.new("\065\108\105\103\110\079\114\105\101\110\116\097\116\105\111\110")
+    _0x86v13.Name = "\065\117\116\111\070\097\114\109\065\108\105\103\110\079\114\105\101\110\116\097\116\105\111\110"
+    _0x86v13.Mode = Enum.OrientationAlignmentMode.OneAttachment
+    _0x86v13.Attachment0 = _0x84v28
+    _0x86v13.MaxTorque = _0x8cv75
+    _0x86v13.Responsiveness = _0x8dv14
+    _0x86v13.RigidityEnabled = false
+    _0x86v13.Parent = _0x9av24
+
+    return true
+end
+
+
+local function _0x6ev32(_0x6dv36, _0x6fv21)
+    local _0x9bv91 = _0x64v16(_0x6dv36)
+    local _0xa2v23 = workspace:FindFirstChild("\078\080\067\081\117\101\115\116\050")
+    local _0xa3v47 = _0x64v16(_0xa2v23)
+
+    if not _0x9bv91 or not _0xa3v47 then
+        warn("\065\117\116\111\032\076\118\108\058\032\067\111\117\108\100\032\110\111\116\032\102\105\110\100\032\121\111\117\114\032\099\104\097\114\097\099\116\101\114\032\114\111\111\116\032\111\114\032\078\080\067\081\117\101\115\116\050\046")
+        return false
+    end
+
+    _0x6bv75()
+
+    local _0xa0v58 = (_0x9bv91.Position - _0xa3v47.Position).Magnitude
+    local _0xa4v92 = math.max(_0xa0v58 / _0x88v81, 0.5)
+
+    local _0xa5v69 = _0x79v98:Create(
+        _0x9bv91,
+        TweenInfo.new(_0xa4v92, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
+        { CFrame = _0xa3v47.CFrame }
+    )
+
+    _0xa5v69:Play()
+    local _0xa6v19 = _0xa5v69.Completed:Wait()
+
+    if not _0x80v90 or _0x6fv21 ~= _0x8fv62 then
+        return false
+    end
+    if _0xa6v19 ~= Enum.PlaybackState.Completed then
+        return false
+    end
+
+    task.wait(2)
+
+    if not _0x80v90 or _0x6fv21 ~= _0x8fv62 then
+        return false
+    end
+
+    _0x7ev47:FireServer("\067\104\111\111\115\101\075\105\108\108")
+ _0x90v20 = _0x6fv21
+    return true
+end
+
+
+local function _0x70v66(_0x6dv36, _0x71v51)
+    local _0x9bv91 = _0x64v16(_0x6dv36)
+    if not _0x9bv91 then
+        return
+    end
+ _0x98v18 = true
+
+    _0x6bv75()
+
+    local _0xa7v26 = _0x9bv91.CFrame
+    local _0xa8v78 = _0xa7v26.RightVector * _0x71v51
+    local _0xa9v21 = _0x9bv91.Position + _0xa8v78 * _0x95v91
+
+    local _0xaav60 = CFrame.lookAt(
+        _0xa9v21,
+        _0xa9v21 + _0xa7v26.LookVector
+    )
+
+    local _0xa5v69 = _0x79v98:Create(
+        _0x9bv91,
+        TweenInfo.new(
+            _0x94v58,
+            Enum.EasingStyle.Sine,
+            Enum.EasingDirection.InOut
+        ),
+        { CFrame = _0xaav60 }
+    )
+
+    _0xa5v69:Play()
+    _0xa5v69.Completed:Wait()
+ _0x98v18 = false
+ _0x96v70 = os.clock()
+ _0x97v52 = math.huge
+end
+
+
+local function _0x72v84()
+ _0x80v90 = false
+ _0x81v84 = nil
+ _0x91v46 = false
+ _0x98v18 = false
+ _0x96v70 = 0
+ _0x97v52 = math.huge
+    _0x6bv75()
+end
+
+
+
+
+local _0xabv58 = _0x7cv78:CreateDropdown({
+ _0xb6v84 = "\078\080\067\032\084\121\112\101", _0xbav41 = {
+        "\071\117\097\114\100\115",
+        "\072\117\110\116\101\114\115\032\108\118\108\032\049\048\048\8211\050\057\057",
+        "\072\117\110\116\101\114\115\032\108\118\108\032\051\057\057\8211\055\057\057",
+        "\087\101\114\101\119\111\108\102",
+    }, _0xbbv11 = "\071\117\097\114\100\115", _0xbcv85 = function(_0x73v75)
+        if typeof(_0x73v75) == "\116\097\098\108\101" then
+ _0x82v93 = _0x73v75[1] or "\071\117\097\114\100\115"
+        else
+ _0x82v93 = _0x73v75 or "\071\117\097\114\100\115"
+        end
+        _0x8fv62 += 1
+ _0x81v84 = nil
+ _0x90v20 = -1
+ _0x96v70 = 0
+ _0x97v52 = math.huge
+    end,
+})
+
+
+local _0xacv13 = _0x7cv78:CreateToggle({
+ _0xb6v84 = "\065\117\116\111\032\076\118\108", _0xbcv85 = function(_0x74v25)
+        if not _0x74v25 then
+            _0x72v84()
+            return
+        end
+
+        if _0x80v90 then
+            return
+        end
+ _0x80v90 = true
+
+        
+        task.spawn(function()
+            local _0xadv69 = 0
+            while _0x80v90 do
+                local _0xaev92 = os.clock()
+                if _0xaev92 - _0xadv69 >= 0.1 then
+ _0xadv69 = _0xaev92
+                    local _0x6dv36 = _0x7av92.Character
+                    local _0x9bv91 = _0x64v16(_0x6dv36)
+                    local _0x9fv85 = _0x64v16(_0x81v84)
+
+                    if _0x9bv91 and _0x9fv85 and _0x66v68(_0x81v84) then
+                        local _0xa0v58 = (_0x9bv91.Position - _0x9fv85.Position).Magnitude
+                        if _0xa0v58 <= _0x89v24 then
+                            _0x7dv67:FireServer("\065\116\116\097\099\107", true)
+                        end
+                    end
+                end
+                task.wait()
+            end
+        end)
+
+        
+        task.spawn(function()
+            local _0xafv47 = nil
+
+            while _0x80v90 do
+                local _0x6dv36 = _0x7av92.Character
+                local _0x99v80 = _0x6dv36 and _0x6dv36:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+                local _0x9bv91 = _0x64v16(_0x6dv36)
+
+                if not _0x6dv36 or not _0x99v80 or _0x99v80.Health <= 0 or not _0x9bv91 then
+                    task.wait(0.2)
+                    continue
+                end
+
+                
+                if _0xafv47 ~= _0x6dv36 then
+ _0xafv47 = _0x6dv36
+ _0x81v84 = nil
+ _0x96v70 = 0
+ _0x97v52 = math.huge
+
+                    if not _0x6cv73(_0x6dv36) then
+                        task.wait(0.2)
+                        continue
+                    end
+
+                    if _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\051\057\057\8211\055\057\057" then
+ _0x90v20 = -1
+                    end
+                end
+
+                
+                if _0x82v93 == "\072\117\110\116\101\114\115\032\108\118\108\032\051\057\057\8211\055\057\057"
+                    and _0x90v20 ~= _0x8fv62
+                    and not _0x91v46 then
+ _0x91v46 = true
+                    local _0x6fv21 = _0x8fv62
+                    local _0xb0v77 = _0x6ev32(_0x6dv36, _0x6fv21)
+ _0x91v46 = false
+
+                    if not _0x80v90 then
+                        break
+                    end
+
+                    if _0x6fv21 ~= _0x8fv62 then
+                        continue
+                    end
+
+                    if _0x7av92.Character == _0x6dv36 then
+                        _0x6cv73(_0x6dv36)
+                    end
+
+                    if not _0xb0v77 then
+                        task.wait(0.2)
+                        continue
+                    end
+ _0x81v84 = nil
+ _0x96v70 = 0
+ _0x97v52 = math.huge
+                end
+
+                
+                if _0x91v46 then
+                    task.wait(0.1)
+                    continue
+                end
+
+                
+                if not _0x66v68(_0x81v84) or not _0x69v32(_0x81v84) then
+ _0x81v84 = _0x6av30()
+ _0x96v70 = 0
+ _0x97v52 = math.huge
+                end
+
+                if not _0x81v84 then
+                    task.wait(0.3)
+                    continue
+                end
+
+                local _0x9fv85 = _0x64v16(_0x81v84)
+                if not _0x9fv85 or not _0x66v68(_0x81v84) then
+ _0x81v84 = nil
+                    continue
+                end
+
+                local _0xb1v59 = _0x9fv85.Position
+                local _0xa0v58 = (_0x9bv91.Position - _0xb1v59).Magnitude
+
+                
+                if not _0x98v18 and _0xa0v58 > _0x89v24 then
+                    local _0xaev92 = os.clock()
+
+                    if _0x96v70 == 0 then
+ _0x96v70 = _0xaev92
+ _0x97v52 = _0xa0v58
+                    elseif _0xaev92 - _0x96v70 >= _0x92v35 then
+                        local _0xb2v56 = _0x97v52 - _0xa0v58
+
+                        if _0xb2v56 < _0x93v50 then
+                            local _0x71v51 = (math.random() > 0.5) and 1 or -1
+
+                            task.spawn(function()
+                                _0x70v66(_0x6dv36, _0x71v51)
+
+                                if not _0x80v90 or _0x7av92.Character ~= _0x6dv36 then
+                                    return
+                                end
+
+                                if _0x6cv73(_0x6dv36) then
+                                    if _0x87v55 and _0x66v68(_0x81v84) then
+                                        local _0xb3v63 = _0x64v16(_0x81v84)
+                                        if _0xb3v63 then
+                                            _0x87v55.Position = _0xb3v63.Position
+                                        end
+                                    end
+                                end
+                            end)
+ _0x96v70 = os.clock()
+ _0x97v52 = math.huge
+                        else
+ _0x96v70 = _0xaev92
+ _0x97v52 = _0xa0v58
+                        end
+                    end
+                end
+                
+
+                local _0xb4v89 = _0x9fv85.CFrame * _0x8ev13
+
+                if _0xa0v58 > _0x89v24 then
+                    if _0x85v89 then
+                        _0x85v89.MaxVelocity = _0x88v81
+                        _0x85v89.MaxForce = _0x8cv75
+                        _0x85v89.Responsiveness = _0x8dv14
+                    end
+                    if _0x87v55 then
+                        _0x87v55.Position = _0xb1v59
+                    end
+                else
+                    if _0x87v55 then
+                        _0x87v55.Position = _0xb4v89
+                    end
+                    _0x9bv91.CFrame = CFrame.lookAt(_0xb4v89, _0xb1v59)
+                end
+
+                
+                if _0xa0v58 > _0x89v24 and _0x86v13 then
+                    local _0xb5v13 = Vector3.new(
+                        _0xb1v59.X - _0x9bv91.Position.X,
+                        0,
+                        _0xb1v59.Z - _0x9bv91.Position.Z
+                    )
+                    if _0xb5v13.Magnitude > 0.01 then
+                        _0x86v13.CFrame = CFrame.lookAt(Vector3.zero, _0xb5v13.Unit)
+                    end
+                end
+
+                _0x78v14.Heartbeat:Wait()
+            end
+
+            _0x6bv75()
+        end)
+    end,
+})
